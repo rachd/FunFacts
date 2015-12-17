@@ -18,27 +18,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="An interesting fact goes here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOA-yE-HRm">
-                                <rect key="frame" x="39" y="174" width="242" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="An interesting fact goes here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOA-yE-HRm">
+                                <rect key="frame" x="48" y="204" width="225" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpw-Ug-sCz">
-                                <rect key="frame" x="80" y="350" width="160" height="30"/>
-                                <state key="normal" title="Show Another Fun Fact"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Did You Know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJ9-7D-zuv">
+                                <rect key="frame" x="31" y="57" width="116" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="Tcp-a8-TRA"/>
+                                    <constraint firstAttribute="height" constant="21" id="Ymd-iK-cEv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpw-Ug-sCz">
+                                <rect key="frame" x="48" y="429" width="225" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="cGT-EZ-Ui0"/>
+                                    <constraint firstAttribute="height" constant="50" id="jrX-3r-VnC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Show Another Fun Fact">
+                                    <color key="titleColor" red="0.29411764705882354" green="0.68627450980392157" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFunFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="jiP-vr-S0p"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.35294117647058826" green="0.72941176470588232" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Kpw-Ug-sCz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="8d4-dQ-qq0"/>
-                            <constraint firstItem="NOA-yE-HRm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EqO-F0-GQZ"/>
-                            <constraint firstItem="NOA-yE-HRm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hjt-Rp-B6M"/>
-                            <constraint firstItem="Kpw-Ug-sCz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Roh-w7-XwD"/>
-                            <constraint firstItem="NOA-yE-HRm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="ht4-Gy-szz"/>
-                            <constraint firstItem="NOA-yE-HRm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zue-2j-VV8"/>
+                            <constraint firstItem="NOA-yE-HRm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4dm-9p-2PA"/>
+                            <constraint firstItem="NOA-yE-HRm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="8Au-jQ-KZS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kpw-Ug-sCz" secondAttribute="bottom" constant="99" id="8Kq-gv-exa"/>
+                            <constraint firstItem="Kpw-Ug-sCz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NwY-WQ-raS"/>
+                            <constraint firstItem="LJ9-7D-zuv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="OKB-cF-czy"/>
+                            <constraint firstItem="LJ9-7D-zuv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="vTx-ZZ-Jq5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="funFactButton" destination="Kpw-Ug-sCz" id="3fu-tG-rtb"/>
+                        <outlet property="funFactLabel" destination="NOA-yE-HRm" id="GJw-yN-iHA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
